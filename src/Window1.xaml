@@ -1,0 +1,99 @@
+﻿<Window x:Class="IHC_Project.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:IHC_Project"
+        mc:Ignorable="d"
+        Title="Gym Manager" Height="450" Width="815"
+        ResizeMode="NoResize">
+    <DockPanel Background="#262a2b">
+        <StackPanel x:Name="stackPanel"  DockPanel.Dock="Top" VerticalAlignment="Top" Orientation="Horizontal">
+            <Button x:Name="detailsButton" Width="100" Height="60" HorizontalAlignment="Left" Background="#a82ac1" Click="Details_Click">
+                <Button.ToolTip>
+                    <TextBlock Text="Show details"/>
+                </Button.ToolTip>
+                <StackPanel>
+                    <Image Source="img/edit4.png" Height="30" Width="30"/>
+                    <Label Content="My details" FontFamily="Calibri" FontSize="15" FontWeight="Bold"/>
+                </StackPanel>
+            </Button>
+            <Button x:Name="usersButton" Width="100" Height="60" HorizontalAlignment="Left" Background="#a82ac1" Click="Users_Click" Visibility="Hidden">
+                <Button.ToolTip>
+                    <TextBlock Text="Manage users"/>
+                </Button.ToolTip>
+                <StackPanel>
+                    <Image Source="img/users1.png" Height="30" Width="30"/>
+                    <Label Content="Users" FontFamily="Calibri" FontSize="15" FontWeight="Bold"/>
+                </StackPanel>
+            </Button>
+            <Button x:Name="plansButton" Width="100" Height="60" HorizontalAlignment="Left" Background="#2a5daf" Click="Plans_Click" Visibility="Hidden">
+                <Button.ToolTip>
+                    <TextBlock Text="Manage Plans"/>
+                </Button.ToolTip>
+                <StackPanel>
+                    <Image Source="img/workout1.png" Height="30" Width="30"/>
+                    <Label Content="Plans" FontFamily="Calibri" FontSize="15" FontWeight="Bold"/>
+                </StackPanel>
+            </Button>
+            <Button x:Name="dietsButton" Width="100" Height="60" HorizontalAlignment="Left" Background="#2a9121" Click="Diets_Click" Visibility="Hidden">
+                <Button.ToolTip>
+                    <TextBlock Text="Manage diets"/>
+                </Button.ToolTip>
+                <StackPanel>
+                    <Image Source="img/diet3.png" Height="30" Width="30"/>
+                    <Label Content="Diets" FontFamily="Calibri" FontSize="15" FontWeight="Bold"/>
+                </StackPanel>
+            </Button>
+            <Button x:Name="classesButton" Width="100" Height="60" HorizontalAlignment="Left" Background="#a03920" Click="Classes_Click" Visibility="Hidden">
+                <Button.ToolTip>
+                    <TextBlock Text="Manage classes"/>
+                </Button.ToolTip>
+                <StackPanel>
+                    <Image Source="img/time2.png" Height="30" Width="30"/>
+                    <Label Content="Classes" FontFamily="Calibri" FontSize="15" FontWeight="Bold"/>
+                </StackPanel>
+            </Button>
+            <Button x:Name="ptButton" Width="100" Height="60" HorizontalAlignment="Left" Background="#701ea0" Click="PT_Click" Visibility="Hidden">
+                <Button.ToolTip>
+                    <TextBlock Text="Manage Personal Tainers"/>
+                </Button.ToolTip>
+                <StackPanel>
+                    <Image Source="img/pt.png" Height="30" Width="30"/>
+                    <Label Content="PT's" FontFamily="Calibri" FontSize="15" FontWeight="Bold"/>
+                </StackPanel>
+            </Button>
+            
+            <Button x:Name="sgbdButton" Width="100" Height="60" HorizontalAlignment="Left" Background="#34bc9c" Click="TestSGBD_Click">
+                <Button.ToolTip>
+                    <TextBlock Text="Test SGBD connection"/>
+                </Button.ToolTip>
+                <StackPanel>
+                    <Image Source="img/sgbd.png" VerticalAlignment="Center" Height="30" Width="30"/>
+                    <Label Content="Test SGBD" FontFamily="Calibri" FontWeight="Bold" FontSize="15" VerticalAlignment="Bottom"/>
+                </StackPanel>
+            </Button>
+            
+            <Button Width="100" Height="60" HorizontalAlignment="Left" Background="#bfa40f" Click="About_Click">
+                <Button.ToolTip>
+                    <TextBlock Text="About"/>
+                </Button.ToolTip>
+                <StackPanel>
+                    <Image Source="img/about3.png" Height="30" Width="30" VerticalAlignment="Top"/>
+                    <Label Content="About" FontFamily="Calibri" FontSize="15" FontWeight="Bold"/>
+                </StackPanel>
+            </Button>
+            <Button Width="100" Height="60" HorizontalAlignment="Left" Background="#EF476F"  Click="Close_Click">
+                <Button.ToolTip>
+                    <TextBlock Text="Close"/>
+                </Button.ToolTip>
+                <StackPanel>
+                    <Image Source="img/close.png" Height="30" Width="30"/>
+                    <Label Content="Close" FontFamily="Calibri" FontSize="15" FontWeight="Bold"/>
+                </StackPanel>
+            </Button>
+        </StackPanel>
+        <Grid x:Name="LayoutRoot">
+        </Grid>
+    </DockPanel>
+</Window>

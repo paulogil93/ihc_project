@@ -1,0 +1,69 @@
+﻿<UserControl x:Class="IHC_Project.About"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:IHC_Project"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="296*"/>
+            <ColumnDefinition Width="511*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Label Grid.Column="0" Grid.Row="0" Content="About" HorizontalContentAlignment="Center" HorizontalAlignment="Center" FontSize="30" FontFamily="Corbel" FontWeight="Bold" Foreground="White" Margin="16,0,28,0"/>
+        <Image Source="img/about_icon3.png" VerticalAlignment="Bottom" HorizontalAlignment="Center" Height ="280" Grid.RowSpan="12" Width="280"/>
+        <Label Grid.Column="1" Grid.Row="1" Content="IHC/BD - 2017/2018" HorizontalContentAlignment="Center" HorizontalAlignment="Center" FontSize="20" FontFamily="Corbel" Foreground="White"/>
+        <Label Grid.Column="1" Grid.Row="2"/>
+        <Label Grid.Column="1" Grid.Row="3" Content="Interface developed by: " HorizontalAlignment="Center" Foreground="White" Margin="21,0,349,0"/>
+        <Label Grid.Column="1" Grid.Row="3" Content="Paulo Gil" HorizontalAlignment="Center" Foreground="White" FontWeight="Bold" Margin="161,0,282,0"/>
+        <Label Grid.Column="1" Grid.Row="4"/>
+        <Label Grid.Column="1" Grid.Row="5" Content="Database developed by: " HorizontalAlignment="Center" Foreground="White" Margin="21,0,349,0"/>
+        <Label Grid.Column="1" Grid.Row="5" Content="Tiago Almeida/Paulo Gil" HorizontalAlignment="Center" Foreground="White" FontWeight="Bold" Margin="163,0,197,0" />
+        <Label Grid.Column="1" Grid.Row="6"/>
+        <Label Grid.Column="1" Grid.Row="7" Content="76361 - 76404" HorizontalAlignment="Center" FontSize="20" FontFamily="Corbel" FontWeight="Bold" Foreground="White"/>
+
+
+        <Button x:Name="tiagoButton" Grid.Column="1" Grid.Row="11" Width="100" Height="55" HorizontalAlignment="Center" VerticalAlignment="Bottom" Background="#3b5998" Margin="207,0,200,0" Click="Tiago_Click">
+            <Button.ToolTip>
+                <TextBlock Text="Tiago Almeida"/>
+            </Button.ToolTip>
+            <StackPanel>
+                <Image Source="img/fb.png" Height="50" Width="50"/>
+            </StackPanel>
+        </Button>
+
+        <Button x:Name="pauloButton" Grid.Column="1" Grid.Row="11" Width="100" Height="55" HorizontalAlignment="Right" VerticalAlignment="Bottom" Background="#3b5998" Margin="307,0,100,0" Click="Paulo_Click">
+            <Button.ToolTip>
+                <TextBlock Text="Paulo Gil"/>
+            </Button.ToolTip>
+            <StackPanel>
+                <Image Source="img/fb.png" Height="50" Width="50"/>
+            </StackPanel>
+        </Button>
+
+        <Button Grid.Column="1" Grid.Row="11" Width="100" Height="55" HorizontalAlignment="Right" VerticalAlignment="Bottom" Background="#16A085" Click="Back_Click">
+            <Button.ToolTip>
+                <TextBlock Text="Back"/>
+            </Button.ToolTip>
+            <StackPanel>
+                <Image Source="img/back2.png" Height="50" Width="50"/>
+            </StackPanel>
+        </Button>
+    </Grid>
+</UserControl>

@@ -1,0 +1,136 @@
+﻿<UserControl x:Class="IHC_Project.ShowDiet"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:IHC_Project"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="296*"/>
+            <ColumnDefinition Width="511*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Label x:Name="dietName" Grid.Column="0" Grid.Row="0" Grid.RowSpan="2" Content="name" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="30" FontFamily="Corbel" FontWeight="Bold" Foreground="White"/>
+        <Image Source="img/diet_img7.png" VerticalAlignment="Bottom" HorizontalAlignment="Center" Height ="280" Grid.RowSpan="15" Width="280" Margin="0,0,0,10"/>
+
+        <Label Grid.Column="1" Grid.Row="1" Content="Day:" VerticalContentAlignment="Center" Foreground="White" Margin="25,0,0,0"/>
+        <ComboBox Name="dayBox" Grid.Column="1" Grid.Row="1"  HorizontalAlignment="Center" VerticalAlignment="Center" Width="120" Height="24" Margin="65,1,322,1">
+            <ComboBoxItem Content="Monday"/>
+            <ComboBoxItem Content="Tuesday"/>
+            <ComboBoxItem Content="Wednesday"/>
+            <ComboBoxItem Content="Thursday"/>
+            <ComboBoxItem Content="Friday"/>
+            <ComboBoxItem Content="Saturday"/>
+            <ComboBoxItem Content="Sunday"/>
+        </ComboBox>
+
+        <Label Grid.Column="1" Grid.Row="1" Content="Meal:" Foreground="White" VerticalContentAlignment="Center" Margin="206,0,261,0"/>
+        <ComboBox Name="mealBox" Grid.Column="1"  HorizontalAlignment="Center" VerticalAlignment="Center" Width="120" Height="24" Margin="253,1,134,1" Grid.Row="1">
+            <ComboBoxItem Content="Breakfast"/>
+            <ComboBoxItem Content="Morning snack"/>
+            <ComboBoxItem Content="Lunch"/>
+            <ComboBoxItem Content="Afternoon snack"/>
+            <ComboBoxItem Content="Dinner"/>
+            <ComboBoxItem Content="Supper"/>
+        </ComboBox>
+        <Button Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" Width="60" Height="24" Content="Show" Margin="407,3,40,3"/>
+        <Label Grid.Column="1" Grid.Row="2"/>
+        <Label x:Name="foodLabel" Grid.Column="1" Grid.Row="3" Content="Food" Foreground="White" VerticalContentAlignment="Center" Margin="133,0,334,0"/>
+        <Label x:Name="quantityLabel" Grid.Column="1" Grid.Row="3" Content="Quantity" Foreground="White" VerticalContentAlignment="Center" Margin="333,0,116,0"/>
+        <ComboBox Name="foodBox1" Grid.Column="1" Grid.Row="4" HorizontalAlignment="Center" VerticalAlignment="Center" Width="120" Height="24" Margin="90,0,297,0"/>
+        <ComboBox Name="quantityBox1" Grid.Column="1" Grid.Row="4" HorizontalAlignment="Center" VerticalAlignment="Center" Width="120" Height="24" Margin="299,0,88,0">
+            <ComboBoxItem Content="50g"/>
+            <ComboBoxItem Content="100g"/>
+            <ComboBoxItem Content="150g"/>
+            <ComboBoxItem Content="200g"/>
+            <ComboBoxItem Content="250g"/>
+        </ComboBox>
+        <Label Grid.Column="1" Grid.Row="5"/>
+        <ComboBox Name="foodBox2" Grid.Column="1" Grid.Row="6" HorizontalAlignment="Center" VerticalAlignment="Center" Width="120" Height="24" Margin="89,0,298,0" />
+        <ComboBox Name="quantityBox2" Grid.Column="1" Grid.Row="6" HorizontalAlignment="Center" VerticalAlignment="Center" Width="120" Height="24" Margin="299,0,88,0">
+            <ComboBoxItem Content="50g"/>
+            <ComboBoxItem Content="100g"/>
+            <ComboBoxItem Content="150g"/>
+            <ComboBoxItem Content="200g"/>
+            <ComboBoxItem Content="250g"/>
+        </ComboBox>
+        <Label Grid.Column="1" Grid.Row="7"/>
+        <ComboBox Name="foodBox3" Grid.Column="1" Grid.Row="8" HorizontalAlignment="Center" VerticalAlignment="Center" Width="120" Height="24" Margin="89,0,298,0"/>
+        <ComboBox Name="quantityBox3" Grid.Column="1" Grid.Row="8" HorizontalAlignment="Center" VerticalAlignment="Center" Width="120" Height="24" Margin="299,0,88,0">
+            <ComboBoxItem Content="50g"/>
+            <ComboBoxItem Content="100g"/>
+            <ComboBoxItem Content="150g"/>
+            <ComboBoxItem Content="200g"/>
+            <ComboBoxItem Content="250g"/>
+        </ComboBox>
+        <Label Grid.Column="1" Grid.Row="9"/>
+        <ComboBox Name="foodBox4" Grid.Column="1" Grid.Row="10" HorizontalAlignment="Center" VerticalAlignment="Center" Width="120" Height="24" Margin="89,0,298,0"/>
+        <ComboBox Name="quantityBox4" Grid.Column="1" Grid.Row="10" HorizontalAlignment="Center" VerticalAlignment="Center" Width="120" Height="24" Margin="299,0,88,0">
+            <ComboBoxItem Content="50g"/>
+            <ComboBoxItem Content="100g"/>
+            <ComboBoxItem Content="150g"/>
+            <ComboBoxItem Content="200g"/>
+            <ComboBoxItem Content="250g"/>
+        </ComboBox>
+        <Label Grid.Column="1" Grid.Row="11"/>
+        <ComboBox Name="foodBox5" Grid.Column="1" Grid.Row="12" HorizontalAlignment="Center" VerticalAlignment="Center" Width="120" Height="24" Margin="88,0,299,0"/>
+        <ComboBox Name="quantityBox5" Grid.Column="1" Grid.Row="12" HorizontalAlignment="Center" VerticalAlignment="Center" Width="120" Height="24" Margin="299,0,88,0">
+            <ComboBoxItem Content="50g"/>
+            <ComboBoxItem Content="100g"/>
+            <ComboBoxItem Content="150g"/>
+            <ComboBoxItem Content="200g"/>
+            <ComboBoxItem Content="250g"/>
+        </ComboBox>
+
+        <Button x:Name="deleteButton" Grid.Column="1" Grid.Row="14" Width="100" Height="55" HorizontalAlignment="Right" VerticalAlignment="Bottom" Background="#e23131" Margin="0,0,199,0">
+            <Button.ToolTip>
+                <TextBlock Text="Delete"/>
+            </Button.ToolTip>
+            <StackPanel>
+                <Image Source="img/delete3.png" Height="50" Width="50"/>
+            </StackPanel>
+        </Button>
+        <Button x:Name="editButton" Grid.Column="1" Grid.Row="14" Width="100" Height="55" HorizontalAlignment="Center" VerticalAlignment="Bottom" Background="#8E44AD" Margin="307,0,100,0">
+            <Button.ToolTip>
+                <TextBlock Text="Edit"/>
+            </Button.ToolTip>
+            <StackPanel>
+                <Image Source="img/edit3.png" Height="50" Width="50"/>
+            </StackPanel>
+        </Button>
+        <Button x:Name="saveButton" Visibility="Hidden" Grid.Column="1" Grid.Row="14" Width="100" Height="55" HorizontalAlignment="Center" VerticalAlignment="Bottom" Background="#e28b18" Margin="307,0,100,0">
+            <Button.ToolTip>
+                <TextBlock Text="Save"/>
+            </Button.ToolTip>
+            <StackPanel>
+                <Image Source="img/save6.png" Height="50" Width="50"/>
+            </StackPanel>
+        </Button>
+        <Button Grid.Column="1" Grid.Row="14" Width="100" Height="55" HorizontalAlignment="Right" VerticalAlignment="Bottom" Background="#16A085" Click="Back_Click">
+            <Button.ToolTip>
+                <TextBlock Text="Back"/>
+            </Button.ToolTip>
+            <StackPanel>
+                <Image Source="img/back2.png" Height="50" Width="50"/>
+            </StackPanel>
+        </Button>
+    </Grid>
+</UserControl>

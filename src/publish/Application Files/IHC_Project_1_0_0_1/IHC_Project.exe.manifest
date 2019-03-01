@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="IHC_Project.exe" version="1.0.0.1" publicKeyToken="b28646aaef56f3cf" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="gym_default.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="IHC_Project" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="IHC_Project.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="IHC_Project.exe" size="2450424">
+      <assemblyIdentity name="IHC_Project" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>oUja0l8zTgP3vCD+DD9yLJVogttPWWoN86vfaRasP/U=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="gym_default.ico" size="187905">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>nmtWMC0rRB0Yiez0r0O6adChaw5DHjkyx767pbLDXoE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="IHC_Project.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>rl5/qDc7Jz+tB+BIbOv9iMGPlRe6YJwrjmU09dnlPcs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="img\gym.svg" size="3619">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>8LuuEJvgcIgtCFLkVjC3o7iehrsYBfMeiVoCezgkevA=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DESKTOP-KLKL9UR\Paulo Gil" issuerKeyHash="1f7dcef4f9c1bdc93f3c4983edc74bba9d54ef8e" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>Nt3bFtFrh6hc7yyymk/QX0nD6RCKULxRESRIFf6j6hE=</DigestValue></Reference></SignedInfo><SignatureValue>P5gFlE83YAF5/TFOw2bzis6yVcKb1T8fOZZmXmisBqRL9L/XYOMaXO4KA7oY4PD2C8e2gfQ95PMbulYCGS+nwWfRr9M2MdjB14J+WW+PqhZpBhh21thO7D/WBQ2PFaJxLO67kAdA3tz2L+yEnv3sPMT8+YlrfXclbAwCpT3dBYg=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>1BV3DYimL+hI0/6KNtu7h46IexE9OnT8OYcJErUhIsTg4uNvSsv39yQuavbGEPO7Bk/vRh0hjKhJHVXsGTRMZ4o1wkX081m7tFkSLGpX/q7L/AmwAOeIP97ZDaPnyHEcMe/T0LZIweV6q5vy1hd1AQC//D7y6VLHmEYmhUKpHqU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="11eaa3fe1548241151bc508a10e9c3495fd04f9ab22cef5ca8876bd116dbdd36" Description="" Url=""><as:assemblyIdentity name="IHC_Project.exe" version="1.0.0.1" publicKeyToken="b28646aaef56f3cf" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-KLKL9UR\Paulo Gil</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>v/suJjg3lLbAM0mmEC5SvmZRN3oWbKnhxtVJraJlMFI=</DigestValue></Reference></SignedInfo><SignatureValue>eGNuIego2KJpuigTjrp8o2IyflYZs/nbBzycEWSMu9i8v6q2vGHjcjrl8rdnt+ryK12Ur9oFys0AT3VehTpVhBTn8u+BYPAxtLlhbQf8IDh6MdrXBLBZXe042kJ35iuI0atFGZF4Wydoy8aKzn2CiwJYygC5ELLEZgmGLKr8or4=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>1BV3DYimL+hI0/6KNtu7h46IexE9OnT8OYcJErUhIsTg4uNvSsv39yQuavbGEPO7Bk/vRh0hjKhJHVXsGTRMZ4o1wkX081m7tFkSLGpX/q7L/AmwAOeIP97ZDaPnyHEcMe/T0LZIweV6q5vy1hd1AQC//D7y6VLHmEYmhUKpHqU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB/TCCAWagAwIBAgIQdn2t6agK2I9IzzYF64vTfjANBgkqhkiG9w0BAQsFADA9MTswOQYDVQQDHjIARABFAFMASwBUAE8AUAAtAEsATABLAEwAOQBVAFIAXABQAGEAdQBsAG8AIABHAGkAbDAeFw0xODA1MjkxNzM5MTNaFw0xOTA1MjkyMzM5MTNaMD0xOzA5BgNVBAMeMgBEAEUAUwBLAFQATwBQAC0ASwBMAEsATAA5AFUAUgBcAFAAYQB1AGwAbwAgAEcAaQBsMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDUFXcNiKYv6EjT/oo227uHjoh7ET06dPw5hwkStSEixODi429Ky/f3JC5q9sYQ87sGT+9GHSGMqEkdVewZNExnijXCRfTzWbu0WRIsalf+rsv8CbAA54g/3tkNo+fIcRwx79PQtkjB5Xqrm/LWF3UBAL/8PvLpUseYRiaFQqkepQIDAQABMA0GCSqGSIb3DQEBCwUAA4GBABngTizXqcVXU2vGs3lmDXfgfAy6N3lNRw1WK6Pct1Imd4k2uai9EP9reDuQp7wYQH7Tls4dJCv5m9rXVL+TFgeSFwdy4JYQi2INGjFM4OBGqe5Nw9vf0OxzlzfsqG0i4KWJwSxffjXVH2Fo6/kRVCIjNTUBqchgdLmDDlFBP1FN</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
